@@ -1,0 +1,8 @@
+CREATE TABLE Playlist(
+	videoid UNIQUE ON CONFLICT REPLACE,
+	new DEFAULT FALSE,
+	error DEFAULT FALSE,
+	timestamp INTEGER,
+	lastplayed INTEGER,
+	flagged DEFAULT FALSE
+);
